@@ -1,0 +1,129 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+enum Role {
+  CUSTOMER
+  KITCHEN_STAFF
+  AGENT
+  VENDOR
+  ADMIN
+}
+
+enum OrderType {
+  DELIVERY
+  TAKEAWAY
+}
+
+enum OrderStatus {
+  PENDING
+  CONFIRMED
+  IN_KITCHEN
+  READY
+  OUT_FOR_DELIVERY
+  DELIVERED
+  CANCELED
+}
+
+model User {
+  id           String   @id @default(cuid())
+  name         String
+  firstName    String?
+  lastName     String?
+  email        String   @unique
+  phone        String?
+  password     String
+  role         Role     @default(CUSTOMER)
+  restaurantName String?
+  avatar       String?
+  country      String   @default("السعودية")
+  city         String?
+  addressLine  String?
+  createdAt    DateTime @default(now())
+  orders         Order[]
+  agentOrders    Order[]     @relation("AgentOrders")
+  deliveryOrders Order[]     @relation("DeliveryOrders")
+}
+
+model Category {
+  id       String     @id @default(cuid())
+  name     String     @unique
+  image    String?
+  position Int        @default(0)
+  items    MenuItem[]
+}
+
+model MenuItem {
+  id           String        @id @default(cuid())
+  categoryId   String
+  category     Category      @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  name         String
+  description  String?
+  basePrice    Float
+  image        String?
+  isAvailable  Boolean       @default(true)
+  position     Int           @default(0)
+  optionGroups OptionGroup[]
+  orderItems   OrderItem[]
+}
+
+model OptionGroup {
+  id            String       @id @default(cuid())
+  menuItemId    String
+  menuItem      MenuItem     @relation(fields: [menuItemId], references: [id], onDelete: Cascade)
+  name          String
+  isRequired    Boolean      @default(false)
+  allowMultiple Boolean      @default(false)
+  position      Int          @default(0)
+  options       OptionItem[]
+}
+
+model OptionItem {
+  id            String      @id @default(cuid())
+  optionGroupId String
+  optionGroup   OptionGroup @relation(fields: [optionGroupId], references: [id], onDelete: Cascade)
+  name          String
+  price         Float       @default(0)
+  position      Int         @default(0)
+}
+
+model Order {
+  id              String      @id @default(cuid())
+  orderNumber     String?     @unique
+  userId          String
+  user            User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  orderType       OrderType
+  status          OrderStatus @default(PENDING)
+  totalPrice      Float
+  deliveryAddress String?
+  notes           String?
+  paymentMethod   String?
+  createdAt       DateTime    @default(now())
+  agentId         String?
+  agent           User?       @relation("AgentOrders", fields: [agentId], references: [id])
+  sentToDelivery  Boolean     @default(false)
+  deliveryManId   String?
+  deliveryMan     User?       @relation("DeliveryOrders", fields: [deliveryManId], references: [id])
+  items           OrderItem[]
+}
+
+model OrderItem {
+  id              String   @id @default(cuid())
+  orderId         String
+  order           Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  menuItemId      String
+  menuItem        MenuItem @relation(fields: [menuItemId], references: [id], onDelete: Cascade)
+  quantity        Int
+  price           Float
+  selectedOptions Json?
+}
+
+model Setting {
+  key   String @id
+  value String
+}

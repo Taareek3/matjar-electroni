@@ -1,0 +1,30 @@
+node_modules/
+.env
+dist/
+dev.db
+*.db
+/src/generated/prisma
+
+# Flutter
+.dart_tool/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+*.iml
+.idea/
+
+# Logs
+*.log
+lt5000.log
+lt5173.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Admin dashboard
+admin-dashboard/node_modules/
+admin-dashboard/dist/
+
+# Tunnel
+cloudflared.exe

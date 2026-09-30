@@ -1,0 +1,390 @@
+
+> matjar-electroni@1.0.0 dev
+> nodemon
+
+[33m[nodemon] 3.1.14[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): src\**\*[39m
+[33m[nodemon] watching extensions: ts,json[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+(node:5756) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✅ Database connected
+🚀 Server running on http://localhost:5000
+❤️  Health check: http://localhost:5000/api/health
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+(node:30992) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✅ Database connected
+🚀 Server running on http://localhost:5000
+❤️  Health check: http://localhost:5000/api/health
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/auth.controller.ts(53,3): error TS2322: Type '{ name: string; id: string; firstName: string | null; lastName: string | null; email: string; phone: string | null; role: Role; restaurantName: string | null; avatar: string | null; country: string; city: string | null; addressLine: string | null; createdAt: Date; }' is not assignable to type 'SafeUser'.
+  Property 'vendorId' is missing in type '{ name: string; id: string; firstName: string | null; lastName: string | null; email: string; phone: string | null; role: Role; restaurantName: string | null; avatar: string | null; country: string; city: string | null; addressLine: string | null; createdAt: Date; }' but required in type '{ vendorId: string | null; }'.
+
+    at createTSError (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:2003:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19) {
+  diagnosticCodes: [ 2322 ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+(node:17588) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✅ Database connected
+🚀 Server running on http://localhost:5000
+❤️  Health check: http://localhost:5000/api/health
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/routes/admin.routes.ts(3,3): error TS2305: Module '"../controllers/admin.agents.controller"' has no exported member 'createAgent'.
+src/routes/admin.routes.ts(4,3): error TS2305: Module '"../controllers/admin.agents.controller"' has no exported member 'deleteAgent'.
+src/routes/admin.routes.ts(5,3): error TS2305: Module '"../controllers/admin.agents.controller"' has no exported member 'listAgents'.
+src/routes/admin.routes.ts(6,3): error TS2305: Module '"../controllers/admin.agents.controller"' has no exported member 'updateAgent'.
+
+    at createTSError (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:2003:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19) {
+  diagnosticCodes: [ 2305, 2305, 2305, 2305 ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+(node:28728) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✅ Database connected
+🚀 Server running on http://localhost:5000
+❤️  Health check: http://localhost:5000/api/health
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+(node:23084) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✅ Database connected
+🚀 Server running on http://localhost:5000
+❤️  Health check: http://localhost:5000/api/health
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+(node:23872) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✅ Database connected
+🚀 Server running on http://localhost:5000
+❤️  Health check: http://localhost:5000/api/health
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+(node:26012) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✅ Database connected
+🚀 Server running on http://localhost:5000
+❤️  Health check: http://localhost:5000/api/health
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+(node:23112) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✅ Database connected
+🚀 Server running on http://localhost:5000
+❤️  Health check: http://localhost:5000/api/health
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+(node:25516) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✅ Database connected
+🚀 Server running on http://localhost:5000
+❤️  Health check: http://localhost:5000/api/health
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+(node:28440) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✅ Database connected
+🚀 Server running on http://localhost:5000
+❤️  Health check: http://localhost:5000/api/health
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+(node:31476) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✅ Database connected
+🚀 Server running on http://localhost:5000
+❤️  Health check: http://localhost:5000/api/health
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+(node:32696) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✅ Database connected
+🚀 Server running on http://localhost:5000
+❤️  Health check: http://localhost:5000/api/health
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+(node:30052) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✅ Database connected
+🚀 Server running on http://localhost:5000
+❤️  Health check: http://localhost:5000/api/health
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+(node:18116) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✅ Database connected
+🚀 Server running on http://localhost:5000
+❤️  Health check: http://localhost:5000/api/health
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/orders.controller.ts(15,11): error TS2353: Object literal may only specify known properties, and 'imageUrl' does not exist in type 'MenuItemSelect<DefaultArgs>'.
+src/controllers/orders.controller.ts(75,18): error TS2551: Property 'menuItem' does not exist on type '{ id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }'. Did you mean 'menuItemId'?
+src/controllers/orders.controller.ts(76,20): error TS2551: Property 'menuItem' does not exist on type '{ id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }'. Did you mean 'menuItemId'?
+src/controllers/orders.controller.ts(77,27): error TS2551: Property 'menuItem' does not exist on type '{ id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }'. Did you mean 'menuItemId'?
+src/controllers/orders.controller.ts(78,21): error TS2551: Property 'menuItem' does not exist on type '{ id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }'. Did you mean 'menuItemId'?
+src/controllers/orders.controller.ts(79,24): error TS2551: Property 'menuItem' does not exist on type '{ id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }'. Did you mean 'menuItemId'?
+src/controllers/orders.controller.ts(80,26): error TS2551: Property 'menuItem' does not exist on type '{ id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }'. Did you mean 'menuItemId'?
+
+    at createTSError (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:2003:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19) {
+  diagnosticCodes: [
+    2353, 2551,
+    2551, 2551,
+    2551, 2551,
+    2551
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/orders.controller.ts(75,18): error TS2551: Property 'menuItem' does not exist on type '{ id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }'. Did you mean 'menuItemId'?
+src/controllers/orders.controller.ts(76,20): error TS2551: Property 'menuItem' does not exist on type '{ id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }'. Did you mean 'menuItemId'?
+src/controllers/orders.controller.ts(77,27): error TS2551: Property 'menuItem' does not exist on type '{ id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }'. Did you mean 'menuItemId'?
+src/controllers/orders.controller.ts(78,21): error TS2551: Property 'menuItem' does not exist on type '{ id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }'. Did you mean 'menuItemId'?
+src/controllers/orders.controller.ts(79,24): error TS2551: Property 'menuItem' does not exist on type '{ id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }'. Did you mean 'menuItemId'?
+src/controllers/orders.controller.ts(80,26): error TS2551: Property 'menuItem' does not exist on type '{ id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }'. Did you mean 'menuItemId'?
+
+    at createTSError (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:2003:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19) {
+  diagnosticCodes: [ 2551, 2551, 2551, 2551, 2551, 2551 ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/orders.controller.ts(218,42): error TS2345: Argument of type '{ user: { name: string; id: string; firstName: string | null; lastName: string | null; email: string; phone: string | null; password: string; role: Role; restaurantName: string | null; ... 4 more ...; createdAt: Date; }; _count: { ...; }; items: { ...; }[]; agent: { ...; } | null; deliveryMan: { ...; } | null; } & {...' is not assignable to parameter of type '{ items: ({ menuItem: { name: string; id: string; image: string | null; categoryId: string; description: string | null; basePrice: number; }; } & { id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; })[]; } & { ...; }'.
+  Type '{ user: { name: string; id: string; firstName: string | null; lastName: string | null; email: string; phone: string | null; password: string; role: Role; restaurantName: string | null; ... 4 more ...; createdAt: Date; }; _count: { ...; }; items: { ...; }[]; agent: { ...; } | null; deliveryMan: { ...; } | null; } & {...' is not assignable to type '{ items: ({ menuItem: { name: string; id: string; image: string | null; categoryId: string; description: string | null; basePrice: number; }; } & { id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; })[]; }'.
+    Types of property 'items' are incompatible.
+      Type '{ id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }[]' is not assignable to type '({ menuItem: { name: string; id: string; image: string | null; categoryId: string; description: string | null; basePrice: number; }; } & { id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; })[]'.
+        Type '{ id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }' is not assignable to type '{ menuItem: { name: string; id: string; image: string | null; categoryId: string; description: string | null; basePrice: number; }; } & { id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }'.
+          Property 'menuItem' is missing in type '{ id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }' but required in type '{ menuItem: { name: string; id: string; image: string | null; categoryId: string; description: string | null; basePrice: number; }; }'.
+src/controllers/orders.controller.ts(241,26): error TS2345: Argument of type '(order: { items: ({ menuItem: { name: string; id: string; image: string | null; categoryId: string; description: string | null; basePrice: number; }; } & { id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; })[]; } & { ...; }) => { ...; }' is not assignable to parameter of type '(value: { user: { name: string; id: string; firstName: string | null; lastName: string | null; email: string; phone: string | null; password: string; role: Role; restaurantName: string | null; ... 4 more ...; createdAt: Date; }; _count: { ...; }; items: { ...; }[]; agent: { ...; } | null; deliveryMan: { ...; } | nul...'.
+  Types of parameters 'order' and 'value' are incompatible.
+    Type '{ user: { name: string; id: string; firstName: string | null; lastName: string | null; email: string; phone: string | null; password: string; role: Role; restaurantName: string | null; ... 4 more ...; createdAt: Date; }; _count: { ...; }; items: { ...; }[]; agent: { ...; } | null; deliveryMan: { ...; } | null; } & {...' is not assignable to type '{ items: ({ menuItem: { name: string; id: string; image: string | null; categoryId: string; description: string | null; basePrice: number; }; } & { id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; })[]; } & { ...; }'.
+      Type '{ user: { name: string; id: string; firstName: string | null; lastName: string | null; email: string; phone: string | null; password: string; role: Role; restaurantName: string | null; ... 4 more ...; createdAt: Date; }; _count: { ...; }; items: { ...; }[]; agent: { ...; } | null; deliveryMan: { ...; } | null; } & {...' is not assignable to type '{ items: ({ menuItem: { name: string; id: string; image: string | null; categoryId: string; description: string | null; basePrice: number; }; } & { id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; })[]; }'.
+        Types of property 'items' are incompatible.
+          Type '{ id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }[]' is not assignable to type '({ menuItem: { name: string; id: string; image: string | null; categoryId: string; description: string | null; basePrice: number; }; } & { id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; })[]'.
+            Type '{ id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }' is not assignable to type '{ menuItem: { name: string; id: string; image: string | null; categoryId: string; description: string | null; basePrice: number; }; } & { id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }'.
+              Property 'menuItem' is missing in type '{ id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }' but required in type '{ menuItem: { name: string; id: string; image: string | null; categoryId: string; description: string | null; basePrice: number; }; }'.
+src/controllers/orders.controller.ts(263,42): error TS2345: Argument of type '{ user: { name: string; id: string; firstName: string | null; lastName: string | null; email: string; phone: string | null; password: string; role: Role; restaurantName: string | null; ... 4 more ...; createdAt: Date; }; _count: { ...; }; items: { ...; }[]; agent: { ...; } | null; deliveryMan: { ...; } | null; } & {...' is not assignable to parameter of type '{ items: ({ menuItem: { name: string; id: string; image: string | null; categoryId: string; description: string | null; basePrice: number; }; } & { id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; })[]; } & { ...; }'.
+  Type '{ user: { name: string; id: string; firstName: string | null; lastName: string | null; email: string; phone: string | null; password: string; role: Role; restaurantName: string | null; ... 4 more ...; createdAt: Date; }; _count: { ...; }; items: { ...; }[]; agent: { ...; } | null; deliveryMan: { ...; } | null; } & {...' is not assignable to type '{ items: ({ menuItem: { name: string; id: string; image: string | null; categoryId: string; description: string | null; basePrice: number; }; } & { id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; })[]; }'.
+    Types of property 'items' are incompatible.
+      Type '{ id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }[]' is not assignable to type '({ menuItem: { name: string; id: string; image: string | null; categoryId: string; description: string | null; basePrice: number; }; } & { id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; })[]'.
+        Type '{ id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }' is not assignable to type '{ menuItem: { name: string; id: string; image: string | null; categoryId: string; description: string | null; basePrice: number; }; } & { id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }'.
+          Property 'menuItem' is missing in type '{ id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }' but required in type '{ menuItem: { name: string; id: string; image: string | null; categoryId: string; description: string | null; basePrice: number; }; }'.
+src/controllers/orders.controller.ts(294,42): error TS2345: Argument of type '{ user: { name: string; id: string; firstName: string | null; lastName: string | null; email: string; phone: string | null; password: string; role: Role; restaurantName: string | null; ... 4 more ...; createdAt: Date; }; _count: { ...; }; items: { ...; }[]; agent: { ...; } | null; deliveryMan: { ...; } | null; } & {...' is not assignable to parameter of type '{ items: ({ menuItem: { name: string; id: string; image: string | null; categoryId: string; description: string | null; basePrice: number; }; } & { id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; })[]; } & { ...; }'.
+  Type '{ user: { name: string; id: string; firstName: string | null; lastName: string | null; email: string; phone: string | null; password: string; role: Role; restaurantName: string | null; ... 4 more ...; createdAt: Date; }; _count: { ...; }; items: { ...; }[]; agent: { ...; } | null; deliveryMan: { ...; } | null; } & {...' is not assignable to type '{ items: ({ menuItem: { name: string; id: string; image: string | null; categoryId: string; description: string | null; basePrice: number; }; } & { id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; })[]; }'.
+    Types of property 'items' are incompatible.
+      Type '{ id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }[]' is not assignable to type '({ menuItem: { name: string; id: string; image: string | null; categoryId: string; description: string | null; basePrice: number; }; } & { id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; })[]'.
+        Type '{ id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }' is not assignable to type '{ menuItem: { name: string; id: string; image: string | null; categoryId: string; description: string | null; basePrice: number; }; } & { id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }'.
+          Property 'menuItem' is missing in type '{ id: string; menuItemId: string; price: number; orderId: string; quantity: number; selectedOptions: JsonValue; }' but required in type '{ menuItem: { name: string; id: string; image: string | null; categoryId: string; description: string | null; basePrice: number; }; }'.
+
+    at createTSError (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:2003:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\taare\Downloads\matjar-electroni\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19) {
+  diagnosticCodes: [ 2345, 2345, 2345, 2345 ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+(node:29964) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✅ Database connected
+🚀 Server running on http://localhost:5000
+❤️  Health check: http://localhost:5000/api/health
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+(node:31060) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✅ Database connected
+🚀 Server running on http://localhost:5000
+❤️  Health check: http://localhost:5000/api/health
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+(node:21064) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✅ Database connected
+🚀 Server running on http://localhost:5000
+❤️  Health check: http://localhost:5000/api/health
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+◇ injected env (5) from .env
+(node:31860) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✅ Database connected
+🚀 Server running on http://localhost:5000
+❤️  Health check: http://localhost:5000/api/health
