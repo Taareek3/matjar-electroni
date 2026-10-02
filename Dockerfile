@@ -10,9 +10,8 @@ COPY prisma7.config.ts tsconfig.json ./
 COPY src ./src
 
 ENV NODE_ENV=production
-ENV DATABASE_URL=postgresql://postgres:postgres@localhost:5432/binaflow
 
-RUN npx prisma generate && npm run build
+RUN DATABASE_URL=postgresql://build:build@localhost:5432/build npx prisma generate && npm run build
 
 EXPOSE 5000
 
