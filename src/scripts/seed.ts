@@ -268,6 +268,15 @@ const seedData: SeedCategory[] = [
 ];
 
 async function seed(): Promise<void> {
+  const menuExists = (await prisma.category.count()) > 0;
+
+  if (menuExists) {
+    console.log("Menu already seeded — skipping menu data and sample orders");
+    await seedAdmin();
+    await seedSettings();
+    return;
+  }
+
   console.log("🌱 Seeding menu data...");
 
   await prisma.category.deleteMany({});

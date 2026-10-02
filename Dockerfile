@@ -1,9 +1,5 @@
 FROM node:22-slim
 
-RUN apt-get update \
- && apt-get install -y --no-install-recommends python3 make g++ \
- && rm -rf /var/lib/apt/lists/*
-
 WORKDIR /app
 
 COPY package.json package-lock.json ./
@@ -14,7 +10,7 @@ COPY prisma7.config.ts tsconfig.json ./
 COPY src ./src
 
 ENV NODE_ENV=production
-ENV DATABASE_URL=file:./dev.db
+ENV DATABASE_URL=postgresql://postgres:postgres@localhost:5432/binaflow
 
 RUN npx prisma generate && npm run build
 

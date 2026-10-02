@@ -1,13 +1,8 @@
-import { PrismaBetterSqlite3 } from "@prisma/adapter-better-sqlite3";
+import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "../generated/prisma/client";
 import env from "./env";
 
-function resolveSqliteUrl(url: string): string {
-  if (!url) return ":memory:";
-  return url.startsWith("file:") ? url.slice("file:".length) : url;
-}
-
-const adapter = new PrismaBetterSqlite3({ url: resolveSqliteUrl(env.DATABASE_URL) });
+const adapter = new PrismaPg({ connectionString: env.DATABASE_URL });
 
 export const prisma = new PrismaClient({ adapter });
 
