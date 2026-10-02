@@ -1,5 +1,5 @@
 import cors from "cors";
-import express, { Express } from "express";
+import express, { Express, Request, Response } from "express";
 import env from "./config/env";
 import { errorHandler, notFoundHandler } from "./middlewares/error.middleware";
 import adminRoutes from "./routes/admin.routes";
@@ -25,6 +25,10 @@ app.use("/api/settings", settingsRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/agent", agentRoutes);
 app.use("/api/delivery", deliveryRoutes);
+
+app.get("/", (_req: Request, res: Response) => {
+  res.status(200).json({ status: "ok", service: "binaflow-api" });
+});
 
 app.use(notFoundHandler);
 app.use(errorHandler);
